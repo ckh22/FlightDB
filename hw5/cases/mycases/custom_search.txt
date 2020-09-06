@@ -1,0 +1,21 @@
+# user500 comparing diff prices dept on day
+create user500 pass 100
+login user500 pass
+search "Chicago IL" "Houston TX" 1 1 1
+search "Chicago IL" "Houston TX" 1 2 1
+search "Chicago IL" "Houston TX" 1 3 1
+quit
+*
+#
+# expected printouts for user 1
+#
+Created user user500
+Logged in as user500
+Itinerary 0: 1 flight(s), 0 minutes
+ID: 1021985 Day: 1 Carrier: UA Number: 374 Origin: Chicago IL Dest: Houston TX Duration: 0 Capacity: 3 Price: 157
+Itinerary 0: 1 flight(s), 142 minutes
+ID: 474531 Day: 2 Carrier: UA Number: 429 Origin: Chicago IL Dest: Houston TX Duration: 142 Capacity: 1 Price: 488
+Itinerary 0: 1 flight(s), 128 minutes
+ID: 545852 Day: 3 Carrier: WN Number: 2661 Origin: Chicago IL Dest: Houston TX Duration: 128 Capacity: 17 Price: 487
+Goodbye
+*

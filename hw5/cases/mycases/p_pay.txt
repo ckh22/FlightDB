@@ -1,0 +1,46 @@
+create 4321 1234 10000
+login 4321 1234
+search "Seattle WA" "Boston MA" 0 10 1
+book 0
+pay 1
+quit
+*
+Created user 4321
+Logged in as 4321
+Itinerary 0: 1 flight(s), 309 minutes
+ID: 708454 Day: 10 Carrier: AS Number: 734 Origin: Seattle WA Dest: Boston MA Duration: 309 Capacity: 5 Price: 677
+Booked flight(s), reservation ID: 1
+Paid reservation: 1 remaining balance: 9323
+Goodbye
+|
+Failed to create user
+Logged in as 4321
+Itinerary 0: 1 flight(s), 309 minutes
+ID: 708454 Day: 10 Carrier: AS Number: 734 Origin: Seattle WA Dest: Boston MA Duration: 309 Capacity: 5 Price: 677
+Booked flight(s), reservation ID: 1
+Paid reservation: 1 remaining balance: 9323
+Goodbye
+*
+create 1337 7331 100
+login 1337 7331
+search "Boston MA" "Seattle WA" 0 10 1
+book 0
+pay 1
+quit
+*
+Created user 1337
+Logged in as 1337
+Itinerary 0: 1 flight(s), 332 minutes
+ID: 60494 Day: 10 Carrier: AS Number: 25 Origin: Boston MA Dest: Seattle WA Duration: 332 Capacity: 19 Price: 189
+Booked flight(s), reservation ID: 1
+User has only 100 in account but itinerary costs 189
+Goodbye
+|
+Failed to create user
+Logged in as 1337
+Itinerary 0: 1 flight(s), 332 minutes
+ID: 60494 Day: 10 Carrier: AS Number: 25 Origin: Boston MA Dest: Seattle WA Duration: 332 Capacity: 19 Price: 189
+Booked flight(s), reservation ID: 1
+User has only 100 in account but itinerary costs 189
+Goodbye
+*

@@ -1,0 +1,26 @@
+search "Seattle WA" "Boston MA" 0 10 1
+create k123 321k 1000
+book 0
+login k123 321k
+book 0
+reservations
+quit
+*
+Itinerary 0: 1 flight(s), 309 minutes
+ID: 708454 Day: 10 Carrier: AS Number: 734 Origin: Seattle WA Dest: Boston MA Duration: 309 Capacity: 5 Price: 677
+Created user k123
+Cannot book reservations, not logged in
+Logged in as k123
+Booked flight(s), reservation ID: 1
+Reservation 1 paid: false:
+ID: 708454 Day: 10 Carrier: AS Number: 734 Origin: Seattle WA Dest: Boston MA Duration: 309 Capacity: 5 Price: 677
+Goodbye
+*
+create diffUser pass 10000
+cancel 1
+quit
+*
+Created user diffUser
+Cannot cancel reservations, not logged in
+Goodbye
+*

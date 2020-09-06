@@ -1,0 +1,57 @@
+# Trying to cancel the reservation ID of other user
+#
+# user 1
+create amazon password 100000
+login amazon password
+search "Seattle WA" "Boston MA" 0 5 1
+book 0
+pay 1
+cancel 1
+reservations
+quit
+*
+#
+# expected printouts for user 1
+# first scenario: book with reservation ID 1
+Created user amazon
+Logged in as amazon
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 722227 Day: 5 Carrier: B6 Number: 498 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 10 Price: 747
+Booked flight(s), reservation ID: 1
+Paid reservation: 1 remaining balance: 99253
+Canceled reservation 1
+Failed to retrieve reservations
+Goodbye
+#
+|
+#
+# second scenario: book with reservation ID 2
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 288 minutes
+ID: 280 Day: 1 Carrier: AA Number: 14 Origin: Kahului HI Dest: Los Angeles CA Duration: 288 Capacity: 18 Price: 598
+Booked flight(s), reservation ID: 2
+Goodbye
+*
+# same user re-book
+login amazon password
+search "Seattle WA" "Boston MA" 0 5 1
+book 0
+quit
+*
+# first scenario: book with reservation ID 2; succeed cancel
+Login failed
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 722227 Day: 5 Carrier: B6 Number: 498 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 10 Price: 747
+Cannot book reservations, not logged in
+Goodbye
+#
+|
+# second scenario: book with reservation ID 1; fail cancel
+Logged in as amazon
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 722227 Day: 5 Carrier: B6 Number: 498 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 10 Price: 747
+Booked flight(s), reservation ID: 1
+Goodbye
+#
+*

@@ -1,0 +1,21 @@
+search "TYPO WA" "Seattle WA" 0 10 1
+search "SEATTLE WA" "BOSTON MA" 0 10 1
+quit
+*
+Itinerary 0: 1 flight(s), 309 minutes
+ID: 708454 Day: 10 Carrier: AS Number: 734 Origin: Seattle WA Dest: Boston MA Duration: 309 Capacity: 5 Price: 677
+Goodbye
+*
+create user1234 1234 10000
+login user1234 1234
+search "SEATTLE WA" "BOSTON MA" 0 10 1
+book 0
+quit
+*
+Created user user1234
+Logged in as user1234
+Itinerary 0: 1 flight(s), 309 minutes
+ID: 708454 Day: 10 Carrier: AS Number: 734 Origin: Seattle WA Dest: Boston MA Duration: 309 Capacity: 5 Price: 677
+Booked flight(s), reservation ID: 1
+Goodbye
+*

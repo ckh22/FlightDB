@@ -1,0 +1,22 @@
+create keihart pass 1000
+create keihart pass 1000
+reservations
+quit
+*
+Created user keihart
+Failed to create user
+Cannot view reservations, not logged in
+Goodbye
+*
+create 1111 1111 1111
+create 2222 2222 2222
+login 1111 1111
+login 2222 2222
+quit
+*
+Created user 1111
+Created user 2222
+Logged in as 1111
+User already logged in
+Goodbye
+*

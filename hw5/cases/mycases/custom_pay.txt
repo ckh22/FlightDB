@@ -1,0 +1,43 @@
+# user command
+create bigCompany password 10000000
+login bigCompany password
+search "Phoenix AZ" "Philadelphia PA" 0 10 10
+book 9
+pay 1
+cancel 1
+book 8
+pay 2
+quit
+*
+#
+# expected printouts for user
+#
+Created user bigCompany
+Logged in as bigCompany
+Itinerary 0: 1 flight(s), 249 minutes
+ID: 679468 Day: 10 Carrier: AA Number: 771 Origin: Phoenix AZ Dest: Philadelphia PA Duration: 249 Capacity: 10 Price: 209
+Itinerary 1: 1 flight(s), 254 minutes
+ID: 680019 Day: 10 Carrier: AA Number: 2026 Origin: Phoenix AZ Dest: Philadelphia PA Duration: 254 Capacity: 16 Price: 552
+Itinerary 2: 1 flight(s), 256 minutes
+ID: 679565 Day: 10 Carrier: AA Number: 1712 Origin: Phoenix AZ Dest: Philadelphia PA Duration: 256 Capacity: 5 Price: 814
+Itinerary 3: 1 flight(s), 259 minutes
+ID: 1066173 Day: 10 Carrier: WN Number: 677 Origin: Phoenix AZ Dest: Philadelphia PA Duration: 259 Capacity: 9 Price: 977
+Itinerary 4: 1 flight(s), 260 minutes
+ID: 566211 Day: 10 Carrier: WN Number: 2884 Origin: Phoenix AZ Dest: Philadelphia PA Duration: 260 Capacity: 16 Price: 668
+Itinerary 5: 1 flight(s), 267 minutes
+ID: 507346 Day: 10 Carrier: US Number: 160 Origin: Phoenix AZ Dest: Philadelphia PA Duration: 267 Capacity: 10 Price: 937
+Itinerary 6: 1 flight(s), 270 minutes
+ID: 241276 Day: 10 Carrier: HP Number: 252 Origin: Phoenix AZ Dest: Philadelphia PA Duration: 270 Capacity: 3 Price: 665
+Itinerary 7: 1 flight(s), 274 minutes
+ID: 679708 Day: 10 Carrier: AA Number: 1803 Origin: Phoenix AZ Dest: Philadelphia PA Duration: 274 Capacity: 18 Price: 941
+Itinerary 8: 1 flight(s), 276 minutes
+ID: 241277 Day: 10 Carrier: HP Number: 256 Origin: Phoenix AZ Dest: Philadelphia PA Duration: 276 Capacity: 1 Price: 112
+Itinerary 9: 1 flight(s), 276 minutes
+ID: 679845 Day: 10 Carrier: AA Number: 1896 Origin: Phoenix AZ Dest: Philadelphia PA Duration: 276 Capacity: 9 Price: 399
+Booked flight(s), reservation ID: 1
+Paid reservation: 1 remaining balance: 9999601
+Canceled reservation 1
+Booked flight(s), reservation ID: 2
+Paid reservation: 2 remaining balance: 9999489
+Goodbye
+*

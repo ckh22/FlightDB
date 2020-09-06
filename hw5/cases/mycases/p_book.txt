@@ -1,0 +1,46 @@
+create mobPsycho psychic 0
+login mobPsycho psychic
+search "Seattle WA" "Boston MA" 1 1 1
+book 0
+pay 2
+quit
+*
+Created user mobPsycho
+Logged in as mobPsycho
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Booked flight(s), reservation ID: 2
+User has only 0 in account but itinerary costs 140
+Goodbye
+|
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Booked flight(s), reservation ID: 2
+Cannot find unpaid reservation 2 under user: mobPsycho
+Goodbye
+*
+create rich dollarBills 10000000
+login rich dollarBills
+search "Seattle WA" "Boston MA" 1 2 1
+book 0
+pay 1
+quit
+*
+Created user rich
+Logged in as rich
+Itinerary 0: 1 flight(s), 299 minutes
+ID: 720462 Day: 2 Carrier: B6 Number: 498 Origin: Seattle WA Dest: Boston MA Duration: 299 Capacity: 18 Price: 838
+Booked flight(s), reservation ID: 1
+Paid reservation: 1 remaining balance: 9999162
+Goodbye
+|
+Created user rich
+Logged in as rich
+Itinerary 0: 1 flight(s), 299 minutes
+ID: 720462 Day: 2 Carrier: B6 Number: 498 Origin: Seattle WA Dest: Boston MA Duration: 299 Capacity: 18 Price: 838
+Booked flight(s), reservation ID: 1
+Cannot find unpaid reservation 1 under user: rich
+Goodbye
+*

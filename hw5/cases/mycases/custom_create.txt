@@ -1,0 +1,15 @@
+#
+# create all of my brothers
+create CAMERON password1 100000
+create robeRT password2 1000000
+create ALExAnder password3 10000
+create clIFFord password 1000000
+quit
+*
+#
+Created user CAMERON
+Created user robeRT
+Created user ALExAnder
+Created user clIFFord
+Goodbye
+*

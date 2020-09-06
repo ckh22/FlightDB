@@ -1,0 +1,22 @@
+create kanyeWest kw 100000
+create kanyeWest kanyeWest 1000000
+login kanyeWest kanyeWest
+login kanyeWest kw
+quit
+*
+Created user kanyeWest
+Failed to create user
+Login failed
+Logged in as kanyeWest
+Goodbye
+*
+login kanyeWest kanyeWest
+create yeezus y1 10000000
+login yeezus y1
+quit
+*
+Login failed
+Created user yeezus
+Logged in as yeezus
+Goodbye
+*

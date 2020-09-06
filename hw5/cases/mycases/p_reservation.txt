@@ -1,0 +1,65 @@
+create keihart pass 10000
+login keihart pass
+search "Seattle WA" "Boston MA" 0 10 10
+book 3
+quit
+*
+Created user keihart
+Logged in as keihart
+Itinerary 0: 1 flight(s), 309 minutes
+ID: 708454 Day: 10 Carrier: AS Number: 734 Origin: Seattle WA Dest: Boston MA Duration: 309 Capacity: 5 Price: 677
+Itinerary 1: 1 flight(s), 310 minutes
+ID: 726917 Day: 10 Carrier: B6 Number: 1698 Origin: Seattle WA Dest: Boston MA Duration: 310 Capacity: 2 Price: 886
+Itinerary 2: 1 flight(s), 312 minutes
+ID: 704756 Day: 10 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 312 Capacity: 12 Price: 995
+Itinerary 3: 2 flight(s), 314 minutes
+ID: 704749 Day: 10 Carrier: AS Number: 16 Origin: Seattle WA Dest: Orlando FL Duration: 159 Capacity: 10 Price: 494
+ID: 726256 Day: 10 Carrier: B6 Number: 52 Origin: Orlando FL Dest: Boston MA Duration: 155 Capacity: 5 Price: 302
+Itinerary 4: 1 flight(s), 315 minutes
+ID: 60463 Day: 10 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 315 Capacity: 14 Price: 169
+Itinerary 5: 1 flight(s), 316 minutes
+ID: 726495 Day: 10 Carrier: B6 Number: 498 Origin: Seattle WA Dest: Boston MA Duration: 316 Capacity: 7 Price: 929
+Itinerary 6: 1 flight(s), 319 minutes
+ID: 726543 Day: 10 Carrier: B6 Number: 598 Origin: Seattle WA Dest: Boston MA Duration: 319 Capacity: 2 Price: 524
+Itinerary 7: 1 flight(s), 322 minutes
+ID: 704746 Day: 10 Carrier: AS Number: 12 Origin: Seattle WA Dest: Boston MA Duration: 322 Capacity: 15 Price: 725
+Itinerary 8: 1 flight(s), 323 minutes
+ID: 60117 Day: 10 Carrier: AS Number: 12 Origin: Seattle WA Dest: Boston MA Duration: 323 Capacity: 5 Price: 997
+Itinerary 9: 1 flight(s), 359 minutes
+ID: 726695 Day: 10 Carrier: B6 Number: 998 Origin: Seattle WA Dest: Boston MA Duration: 359 Capacity: 7 Price: 981
+Booked flight(s), reservation ID: 2
+Goodbye
+*
+create kaihart pass 100
+login kaihart pass
+search "Seattle WA" "Houston TX" 0 10 10
+book 5
+pay 1
+quit
+*
+Created user kaihart
+Logged in as kaihart
+Itinerary 0: 1 flight(s), 233 minutes
+ID: 98988 Day: 10 Carrier: CO Number: 1066 Origin: Seattle WA Dest: Houston TX Duration: 233 Capacity: 16 Price: 297
+Itinerary 1: 1 flight(s), 238 minutes
+ID: 85546 Day: 10 Carrier: CO Number: 166 Origin: Seattle WA Dest: Houston TX Duration: 238 Capacity: 16 Price: 628
+Itinerary 2: 1 flight(s), 238 minutes
+ID: 108533 Day: 10 Carrier: CO Number: 1823 Origin: Seattle WA Dest: Houston TX Duration: 238 Capacity: 10 Price: 471
+Itinerary 3: 1 flight(s), 242 minutes
+ID: 104038 Day: 10 Carrier: CO Number: 1539 Origin: Seattle WA Dest: Houston TX Duration: 242 Capacity: 13 Price: 308
+Itinerary 4: 1 flight(s), 243 minutes
+ID: 89538 Day: 10 Carrier: CO Number: 366 Origin: Seattle WA Dest: Houston TX Duration: 243 Capacity: 17 Price: 988
+Itinerary 5: 1 flight(s), 244 minutes
+ID: 86695 Day: 10 Carrier: CO Number: 223 Origin: Seattle WA Dest: Houston TX Duration: 244 Capacity: 14 Price: 446
+Itinerary 6: 1 flight(s), 244 minutes
+ID: 1011823 Day: 10 Carrier: UA Number: 1637 Origin: Seattle WA Dest: Houston TX Duration: 244 Capacity: 12 Price: 850
+Itinerary 7: 1 flight(s), 245 minutes
+ID: 1012073 Day: 10 Carrier: UA Number: 1921 Origin: Seattle WA Dest: Houston TX Duration: 245 Capacity: 18 Price: 521
+Itinerary 8: 1 flight(s), 247 minutes
+ID: 1012131 Day: 10 Carrier: UA Number: 1951 Origin: Seattle WA Dest: Houston TX Duration: 247 Capacity: 13 Price: 201
+Itinerary 9: 1 flight(s), 255 minutes
+ID: 1012117 Day: 10 Carrier: UA Number: 1945 Origin: Seattle WA Dest: Houston TX Duration: 255 Capacity: 9 Price: 715
+Booked flight(s), reservation ID: 1
+User has only 100 in account but itinerary costs 446
+Goodbye
+*

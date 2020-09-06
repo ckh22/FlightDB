@@ -1,0 +1,64 @@
+# user command
+create keihart pass 10000000
+login keihart pass
+search "Seattle WA" "Boston MA" 0 1 1
+book 0
+search "Seattle WA" "Boston MA" 0 2 1
+book 0
+search "Seattle WA" "Boston MA" 0 3 1
+book 0
+pay 1
+pay 2
+pay 3
+reservations
+quit
+*
+# multiple reservations
+# expected printouts for user
+#
+Created user keihart
+Logged in as keihart
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Booked flight(s), reservation ID: 1
+Itinerary 0: 1 flight(s), 299 minutes
+ID: 720462 Day: 2 Carrier: B6 Number: 498 Origin: Seattle WA Dest: Boston MA Duration: 299 Capacity: 18 Price: 838
+Booked flight(s), reservation ID: 2
+Itinerary 0: 1 flight(s), 303 minutes
+ID: 704187 Day: 3 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 303 Capacity: 17 Price: 421
+Booked flight(s), reservation ID: 3
+Paid reservation: 1 remaining balance: 9999860
+Paid reservation: 2 remaining balance: 9999022
+Paid reservation: 3 remaining balance: 9998601
+Reservation 1 paid: true:
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Reservation 2 paid: true:
+ID: 720462 Day: 2 Carrier: B6 Number: 498 Origin: Seattle WA Dest: Boston MA Duration: 299 Capacity: 18 Price: 838
+Reservation 3 paid: true:
+ID: 704187 Day: 3 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 303 Capacity: 17 Price: 421
+Goodbye
+#
+|
+#
+Failed to create user
+Logged in as keihart
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Booked flight(s), reservation ID: 1
+Itinerary 0: 1 flight(s), 299 minutes
+ID: 720462 Day: 2 Carrier: B6 Number: 498 Origin: Seattle WA Dest: Boston MA Duration: 299 Capacity: 18 Price: 838
+Booked flight(s), reservation ID: 2
+Itinerary 0: 1 flight(s), 303 minutes
+ID: 704187 Day: 3 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 303 Capacity: 17 Price: 421
+Booked flight(s), reservation ID: 3
+Paid reservation: 1 remaining balance: 9999860
+Paid reservation: 2 remaining balance: 9999022
+Paid reservation: 3 remaining balance: 9998601
+Reservation 1 paid: true:
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Reservation 2 paid: true:
+ID: 720462 Day: 2 Carrier: B6 Number: 498 Origin: Seattle WA Dest: Boston MA Duration: 299 Capacity: 18 Price: 838
+Reservation 3 paid: true:
+ID: 704187 Day: 3 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 303 Capacity: 17 Price: 421
+Goodbye
+*

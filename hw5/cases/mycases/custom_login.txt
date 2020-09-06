@@ -1,0 +1,17 @@
+# user 1 inputs
+#
+create user1 password 10
+login userOne password
+login user1 password
+login user1 password
+quit
+*
+#
+# expected printouts for user 1
+#
+Created user user1
+Login failed
+Logged in as user1
+User already logged in
+Goodbye
+*
